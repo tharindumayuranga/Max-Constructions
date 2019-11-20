@@ -2,7 +2,7 @@
 
 ## Project Clone
 ```
-https://github.com/tharindumayuranga/Max-Constructions.git
+git clone https://github.com/tharindumayuranga/Max-Constructions.git
 ```
 
 ### Change Directory to my-app/
