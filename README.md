@@ -1,4 +1,4 @@
-# Max-Constructions1
+# Max-Constructions
 
 ## Project Clone
 ```
