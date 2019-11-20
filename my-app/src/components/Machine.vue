@@ -1,13 +1,10 @@
 <template>
     <div class="machine">
+        <v-container class="my-3">
         <v-title>Machines & Tools</v-title>
-
-
-        <v-container class="my-5">
-
             <v-layout row wrap>
                 <v-flex xs12 sm6 md4 lg3 v-for="machine in machines" :key="machine.name">
-                    <v-card class="text-sm-center ma-3">
+                    <v-card class="text-center ma-3">
                         <v-responsive class="pt-4">
                             image
                         </v-responsive>
@@ -17,17 +14,18 @@
                             <div class="subtitle-2">{{ machine.fuel }}</div>
                             <div class="subtitle-2">{{ machine.price }}</div>
                         </v-card-text>
-
-                        <v-card-action>
-
-                            <v-btn x-small fab dark color="cyan" class="ma-5">
-                                <v-icon>mdi-pencil</v-icon>
-                            </v-btn>
-                            <v-btn x-small fab dark color="red" class="ma-5">
-                                <v-icon>mdi-delete</v-icon>
-                            </v-btn>
+                        <v-divider></v-divider>
+                        <v-card-action tile>
+                            <v-row>
+                                <v-col>
+                                        <v-btn x-small fab dark color="cyan" class="ma-2"><v-icon>mdi-pencil</v-icon></v-btn>
+                                </v-col>
+                                <v-spacer></v-spacer>
+                                <v-col>
+                                        <v-btn x-small fab dark color="red" class="ma-2"><v-icon>mdi-delete</v-icon></v-btn>
+                                </v-col>
+                            </v-row>
                         </v-card-action>
-
                     </v-card>
                 </v-flex>
             </v-layout>
