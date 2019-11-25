@@ -18,7 +18,7 @@
                             <v-card-title>{{ machine.name }} <v-spacer></v-spacer> {{ machine.code }}</v-card-title>
                         </div>
 
-                        <div :class="`subtitle-2 machine ${machine.status} `" >{{ machine.status }}</div>
+                        <div :class="`subtitle-1 font-weight-bold machine ${machine.status} `" >{{ machine.status }}</div>
                         <div class="subtitle-2"><b>Rental: </b>{{ machine.rental }}</div>
                         <div class="subtitle-2"><b>Fuel: </b>{{ machine.fuel }}</div>
                         <div class="subtitle-2"><b>Location: </b>{{ machine.location }}</div>
@@ -43,6 +43,12 @@
                             <v-row>
                                 <v-col>
                                         <v-btn x-small fab dark color="cyan" class="ma-2"><v-icon>mdi-pencil</v-icon></v-btn>
+                                </v-col>
+                                <v-spacer></v-spacer>
+                                <v-col>
+                                        <v-btn x-small fab dark color="indigo" class="ma-2"><v-icon>mdi-fileclip</v-icon></v-btn>
+                                        
+                                        
                                 </v-col>
                                 <v-spacer></v-spacer>
                                 <v-col>
